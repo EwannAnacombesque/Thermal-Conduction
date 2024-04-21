@@ -26,7 +26,7 @@ def load_text(file_name):
 
     text = unidecode(text.lower()).replace("\n"," ")
     
-    # Transform the car, into their ASCII code, and back in binary, to finally be cast in strings
+    # Transform the char, into its ASCII code, and back in binary, to finally be cast in string
     global transcripted_text
     transcripted_text = "".join([str(bin(ord(char)))[2:] for char in text])
 
